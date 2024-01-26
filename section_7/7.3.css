@@ -1,0 +1,19 @@
+.body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+.fade-in-element {
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 1.5s ease-in-out; /* Animation properties */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

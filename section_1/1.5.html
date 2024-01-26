@@ -1,0 +1,39 @@
+<!-- How does the HTML5 `data-` attribute work, and give an example of how it might be used? -->
+
+<h1>How does the HTML5 `data-` attribute work, and give an example of how it might be used?</h1>
+
+<p>
+    The data- attribute in HTML5 allows you to store custom data private to the page or application.
+    It provides a way to embed custom data attributes on all HTML elements.
+    These attributes can be used to store information that is not displayed to the user but can be utilized by
+    JavaScript, CSS, or other scripts for various purposes.
+</p>
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Data Attribute Example</title>
+</head>
+
+<body>
+
+    <div id='user-info' data-user-id='123' data-username='john_doe' data-email='john@example.com'>
+    </div>
+
+    <script>
+        var userInfoDiv = document.getElementById('user-info');
+        var userId = userInfoDiv.dataset.userId;
+        var username = userInfoDiv.dataset.username;
+        var email = userInfoDiv.dataset.email;
+
+        console.log('User ID: ' + userId);
+        console.log('Username: ' + username);
+        console.log('Email: ' + email);
+    </script>
+
+</body>
+
+</html>

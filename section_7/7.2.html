@@ -1,0 +1,48 @@
+<!-- Create an HTML form with fields for a username and password. Include client-side
+validation to ensure both fields are filled before submission. -->
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Login Form</title>
+    <link rel='stylesheet' href='7.2.css'>
+</head>
+
+<body>
+
+    <h2>Login Form</h2>
+
+    <form id='loginForm' onsubmit='return validateForm()'>
+        <label for='username'>Username:</label>
+        <input type='text' id='username' name='username' required>
+
+        <br>
+
+        <label for='password'>Password:</label>
+        <input type='password' id='password' name='password' required>
+
+        <br>
+
+        <input type='submit' value='Login'>
+    </form>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username.trim() === '' || password.trim() === '') {
+                alert('Both username and password are required!');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>
