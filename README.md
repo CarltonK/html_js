@@ -3,5 +3,3 @@
 ## We all love projects with READMEs
 
 ## I'm trying to maintain my github streak
-
-## Some more README content
