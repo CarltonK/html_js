@@ -2,4 +2,4 @@
 
 ## We all love projects with READMEs
 
-## I'm trying to maintain my github streak
+## I'm trying to maintain my GitHub streak
