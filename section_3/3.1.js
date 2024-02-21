@@ -12,3 +12,8 @@ console.log('Result (1) = ', result1);
 // Example 2
 const result2 = sum(10, 25);
 console.log('Result (2) = ', result2);
+
+
+// Example 3
+const result3 = sum(40, 10);
+console.log('Result (3) = ', result3);
