@@ -22,6 +22,9 @@ async function fetchDataAsync() {
     try {
         const result = await fetchData();
         console.log(result);
+
+        const result2 = await fetchData();
+        console.log(result2);
     } catch (error) {
         console.error(error);
     }
